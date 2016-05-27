@@ -32,10 +32,10 @@ GoF给出的定义：定义了对象与对象之间"一个对多个"的依赖关
 是观察者把它自己从主题里取消注册了。
 
 ## UML类设计图
-![UML Class Diagram for Observer Patterns.](/images/chapter_01/1_ObserverPatterns_SimpleVersion_UMLClassDiagram.jpg)
+![UML Class Diagram for Observer Patterns.](/images/chapter_02/1_ObserverPatterns_SimpleVersion_UMLClassDiagram.jpg)
 
 ## 包和类的结构图
-![Package Explorer view for Observer Patterns.](/images/chapter_01/1_ObserverPatterns_SimpleVersion_PackageExplorerOverview.jpg)
+![Package Explorer view for Observer Patterns.](/images/chapter_02/1_ObserverPatterns_SimpleVersion_PackageExplorerOverview.jpg)
 
 ## 实现代码
 ```java
@@ -110,7 +110,7 @@ class ObserverPatternEx {
 
 ## 输出结果
 
-![Output for Observer Patterns.](/images/chapter_01/1_ObserverPatterns_SimpleVersion_Output.jpg)
+![Output for Observer Patterns.](/images/chapter_02/1_ObserverPatterns_SimpleVersion_Output.jpg)
 
 ## 笔记
 
@@ -126,22 +126,22 @@ class ObserverPatternEx {
 List<Observer> observerList = new ArrayList<Observer>();
 ```
 
-而是改用这种方式：
+而是改用接口：
 
 ```java
 List<IObserver> observersList = new ArrayList<IObserver>();
 ```
 
-代码里其他位置使用了 `Observer` 的也得改成 `IObserver`。并且 `IObserver.update(int)` 也
-需要修改，这样，观察者才能知道标识值变成了多少。
+代码里其他位置使用了 `Observer` 的也得改成 `IObserver`。并且 `IObserver.update()` 也得
+改成 `IObserver.update(int)`，这样，观察者才能知道标识值变成了多少。
 
 ## UML类设计图
 
-![UML Class Diagram in complex version of Observer Patterns.](/images/chapter_01/1_ObserverPatterns_ComplexVersion_UMLClassDiagram.jpg)
+![UML Class Diagram in complex version of Observer Patterns.](/images/chapter_02/1_ObserverPatterns_ComplexVersion_UMLClassDiagram.jpg)
 
 ## 包和类的结构图
 
-![Package Explorer view in complex version of Observer Patterns.](/images/chapter_01/1_ObserverPatterns_ComplexVersion_PackageExplorerView.jpg)
+![Package Explorer view in complex version of Observer Patterns.](/images/chapter_02/1_ObserverPatterns_ComplexVersion_PackageExplorerView.jpg)
 
 ## 实现代码
 
@@ -234,7 +234,7 @@ class ObserverPatternModifiedEx {
 
 ## 输出结果
 
-![Output in complex version of Observer Patterns.](/images/chapter_01/1_ObserverPatterns_ComplexVersion_Output.jpg)
+![Output in complex version of Observer Patterns.](/images/chapter_02/1_ObserverPatterns_ComplexVersion_Output.jpg)
 
 ## 小任务
 
@@ -244,7 +244,7 @@ _实现一个观察者模式，要求有多个不同的观察者和主题。_
 
 ## UML类设计图
 
-![UML Class Diagram of this Assignment.](/images/chapter_01/1_ObserverPatterns_Assignment_UMLClassDiagram.jpg)
+![UML Class Diagram of this Assignment.](/images/chapter_02/1_ObserverPatterns_Assignment_UMLClassDiagram.jpg)
 
 ## 代码实现
 
@@ -389,4 +389,4 @@ class ObserverPatternDemo3Ex {
 
 ## 输出结果
 
-![Output of this Assignment](/images/chapter_01/1_ObserverPatterns_Assignment_Output.jpg)
+![Output of this Assignment](/images/chapter_02/1_ObserverPatterns_Assignment_Output.jpg)
