@@ -1,8 +1,8 @@
 {
 	"title":"Java Design Patterns 中文翻译版",
-	"description","用Java描述的四人帮的23个设设计模式.",
+	"description":"用Java描述的四人帮的23个设设计模式.",
 	"isbn":"978-1-4842-1802-0",
-	"language",:"zh",
+	"language":"zh",
 	"pdf":{
 		"pageNumbers": true,
 		"paperSize": "a4"

@@ -24,11 +24,11 @@ GoF给出的定义：确保某个类的实例只有一个，所有代码都只�
 
 ## UML类设计图
 
-![UML Class Diagram for Singleton Patterns.](/images/chapter_03/1_SingletonPattern_UMLClassDiagram.jpg)
+![UML Class Diagram for Singleton Patterns.](/images/chapter_03/1_SingletonPatterns_UMLClassDiagram.jpg)
 
 ## 包和类的结构图
 
-![Package Explorer view for Singleton Patterns.](/images/chapter_03/1_SingletonPattern_PackageExplorerView.jpg)
+![Package Explorer view for Singleton Patterns.](/images/chapter_03/1_SingletonPatterns_PackageExplorerView.jpg)
 
 ## 实现代码
 
@@ -73,7 +73,7 @@ class SingletonPatternEx {
 
 ## 输出结果
 
-![Output for Singleton Patterns.](/images/chapter_03/1_SingletonPattern_Output.jpg)
+![Output for Singleton Patterns.](/images/chapter_03/1_SingletonPatterns_Output.jpg)
 
 ## 笔记
 
