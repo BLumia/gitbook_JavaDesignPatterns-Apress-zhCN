@@ -21,7 +21,6 @@ GoF给出的定义：定义了一系列算法，把他们逐个封装起来并�
 ![UML Class Diagram for Strategy Patterns.](/images/chapter_07/1_StrategyPatterns_UMLClassDiagram.png)
 
 ## 包和类的结构图
-High-level structure of the parts of the program is as follows:
 ![Package Explorer view for Strategy Patterns.](/images/chapter_07/1_StrategyPatterns_PackageExplorerView.png)
 
 ## 实现代码
@@ -146,16 +145,13 @@ class StrategyPatternEx
 
 ## 笔记
 
-What is the power behind the strategy pattern?
+策略模式的强大之处在哪？
 
-1. This pattern can provide dynamic behavior for us. It can help us to avoid dealing
-with complex algorithm-specific data structures.
-2. With this pattern, the same behavior can be expressed differently. So, users can
-have a wide variety of choices.
+1. 策略模式可以提供可动态变更的行为。这可以帮助我们避免编写和处理复杂的具体算法（Algorithm-specific）数据结构。
+2. 策略模式中，相同的行为也可以表现不同的特征，用户因此有了更广的选择。
 
-What are the challenges associated with the strategy pattern?
+与策略模式相关的挑战是什么？
 
-1. The number of objects are increased in the system.
-2. Additional overhead is needed due to communication between the strategies
-and their contexts.
-3. Users need to be fully aware of all kinds of possible behaviors to avoid confusion.
+1. 对象的数量在整个系统中是不断上涨的。
+2. 由于存在策略与其对应的上下文间的联系，需要有额外的管理操作存在。
+3. 用户需要熟知所有的行为以避免出现混乱。
